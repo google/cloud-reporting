@@ -20,8 +20,10 @@ Development
 gradle on computers that do not have the package already installed. To build and
 test your changes simply run:
 
-    ./gradlew build
-    ./gradlew test
+    ./gradlew build -x sign
+    ./gradlew test -x sign
+
+This skips the signing step, which is required when releasing full versions.
 
 License
 ------
