@@ -43,7 +43,7 @@ public class Event {
   private final ImmutableMap<String, String> metadata;
 
   /**
-   * Should only be invoked by {@link #Builder#build()}
+   * Should only be invoked by {@link Event.Builder#build()}
    */
   Event(String name, String type, String clientId, boolean isUserSignedIn, boolean isUserInternal,
       Optional<Boolean> isUserTrialEligible, Optional<String> objectType,
@@ -63,7 +63,7 @@ public class Event {
   }
 
   /**
-   * Creates a new {@link #Builder}.
+   * Creates a new {@link Event.Builder}.
    */
   public static Builder builder() {
     return new Builder();
